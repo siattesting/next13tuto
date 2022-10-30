@@ -1,8 +1,8 @@
-import "tailwindcss/tailwind.css";
-import NavLink from "./nav-link";
+import 'tailwindcss/tailwind.css';
+import NavLink from './nav-link';
 
 export default function RootLayout({ children }) {
-  console.log("rendering");
+  console.log('rendering');
   return (
     <html lang="en">
       <head>
@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
 
       <body className="bg-gray-700 text-gray-100 antialiased">
         <header className="border-b p-4">
-          <nav className="space-x-4">
+          <nav className="space-x-4  mb-6">
             <NavLink href="/">Home</NavLink>
             <NavLink href="/shops">Shops</NavLink>
           </nav>
