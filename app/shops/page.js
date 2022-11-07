@@ -1,7 +1,7 @@
 export default function Shops() {
   return (
-    <div>
+    <section className="">
       <h3>Shops page</h3>
-    </div>
+    </section>
   );
 }

@@ -1,37 +1,64 @@
 {
   "pages": {
     "/page": [
-      "static/chunks/webpack-7ce992ad74aa0097.js",
-      "static/chunks/main-app-945dc973ec0af314.js",
-      "static/chunks/app/page-0c17de2e22cd0b31.js"
-    ],
-    "/layout": [
-      "static/chunks/webpack-7ce992ad74aa0097.js",
-      "static/chunks/main-app-945dc973ec0af314.js",
-      "static/chunks/95-eed3d41009488f5c.js",
-      "static/chunks/app/layout-80f9178f83e6c070.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/page.js"
     ],
     "/loading": [
-      "static/chunks/webpack-7ce992ad74aa0097.js",
-      "static/chunks/main-app-945dc973ec0af314.js",
-      "static/chunks/app/loading-abfd4d239c91e3e6.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/loading.js"
     ],
-    "/shops/layout": [
-      "static/chunks/webpack-7ce992ad74aa0097.js",
-      "static/chunks/main-app-945dc973ec0af314.js",
-      "static/chunks/95-eed3d41009488f5c.js",
-      "static/chunks/802-30c9d63d8c411e80.js",
-      "static/chunks/app/shops/layout-624ed46e2ef98642.js"
-    ],
-    "/shops/[id]/page": [
-      "static/chunks/webpack-7ce992ad74aa0097.js",
-      "static/chunks/main-app-945dc973ec0af314.js",
-      "static/chunks/app/shops/[id]/page-435f7ee7c1b40504.js"
+    "/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/layout.js"
     ],
     "/shops/page": [
-      "static/chunks/webpack-7ce992ad74aa0097.js",
-      "static/chunks/main-app-945dc973ec0af314.js",
-      "static/chunks/app/shops/page-ad4195b3773e82a3.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/shops/page.js"
+    ],
+    "/shops/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/shops/layout.js"
+    ],
+    "/cities/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/cities/page.js"
+    ],
+    "/cities/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/cities/layout.js"
+    ],
+    "/products/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/products/page.js"
+    ],
+    "/products/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/products/layout.js"
+    ],
+    "/products/[id]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/products/[id]/page.js"
+    ],
+    "/shops/[id]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/shops/[id]/page.js"
+    ],
+    "/cities/[id]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/cities/[id]/page.js"
     ]
   }
 }

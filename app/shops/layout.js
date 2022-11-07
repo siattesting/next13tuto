@@ -1,49 +1,29 @@
-'use client';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 
-import { use } from 'react';
 import { supabase } from '../../supabaseClient';
 
-async function getShops() {
-  try {
-    const { data, error } = await supabase
-      .from('Shop')
-      .select('*')
-      .order('title');
+export default async function Layout({ children }) {
+  const { data: shops, error } = await supabase
+    .from('Shop')
+    .select('*')
+    .order('title');
 
-    if (error) console.log(error);
+  if (error) console.log(error);
 
-    return {
-      data,
-    };
-  } catch (error) {
-    console.log(error);
+  if (!shops) {
+    return <p>No shops found</p>;
   }
-}
 
-export default function Layout({ children, href }) {
-  const path = usePathname();
-
-  const shops = use(getShops());
-
-  if (!shops) return <p>No shops found</p>;
   return (
     <div className="flex">
-      <div className="mr-6">
-        {/* <h3 className="text-3xl">Shops</h3> */}
-
+      <div className="mr-6 w-1/4">
         <ul className="pr-10 flex-none">
           {shops &&
-            shops.data.map((shop) => (
+            shops.map((shop) => (
               <li key={shop.id}>
                 <Link
                   href={`/shops/${shop.id}`}
-                  className={
-                    path === `/shops/${shop.id}`
-                      ? ' underline text-blue-400'
-                      : 'hover:text-blue-500'
-                  }
+                  className="hover:text-blue-500"
                 >
                   {shop.title}
                 </Link>
@@ -52,7 +32,7 @@ export default function Layout({ children, href }) {
         </ul>
       </div>
 
-      <div className="">{children}</div>
+      <div className="w-3/4">{children}</div>
     </div>
   );
 }
